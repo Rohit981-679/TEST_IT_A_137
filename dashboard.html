@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+</head>
+<body>
+    <!-- Dashboard Container -->
+    <div class="dashboard-container" id="dashboard" style="display: none;">
+        <div class="header">
+            <h1>Welcome Abhishek</h1>
+            <p>Your dashboard overview</p>
+        </div>
+
+        <div class="user-details">
+            <h2>User Details</h2>
+            <p><strong>Name:</strong> Abhishek Kumar</p>
+            <p><strong>Email:</strong> abhishek@example.com</p>
+            <p><strong>Role:</strong> Developer</p>
+        </div>
+
+        <div class="action-buttons">
+            <button id="fetchBtn">Fetch Top 10 GitHub Users</button>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+        <div class="dropdown">
+            <label for="sort-select">Sort Users By:</label>
+            <select id="sort-select">
+                <option value="default">Default</option>
+                <option value="alphabetical">Alphabetical</option>
+            </select>
+        </div>
+
+        <div id="github-users" class="user-list">
+            <h3>Top 10 GitHub Users</h3>
+            <ul id="user-list">
+                <!-- Users will be listed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="dashboard-script.js"></script>
+</body>
+</html>
